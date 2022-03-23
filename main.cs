@@ -1,28 +1,28 @@
-// Created by: Zaida Hammel
-// Created on: March 2022
-// 
-// This function states user's address input.
+// Created by: Abdul Basit
+// Created on: Mar 2022
+//
+// This program accepts user input
 
 using System;
 
-class Program {
-  public static void Main(string[] args)
+class Program
+{
+    public static void Main(string[] args)
     {
-        // This function states user's address input.
-        string streetName;
-        int streetNumber;
+        // This function accepts user input
+        string street_name;
+        int street_number;
 
-        Console.WriteLine("This program will retell you your street name and street number.");
+        Console.WriteLine("This program gets a user's address.");
         Console.WriteLine("");
 
         Console.Write("Enter your street name: ");
-        streetName = Console.ReadLine();
-    
+        street_name = Console.ReadLine();
         Console.Write("Enter your street number: ");
-        streetNumber = Convert.ToInt32(Console.ReadLine());
+        street_number = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("");
-        Console.WriteLine("Your address is: " + streetName + " " + streetNumber + ".");
+        Console.WriteLine("Your address is: " + street_name + ", house " + street_number + ".");
 
         Console.WriteLine("\nDone.");
     }
